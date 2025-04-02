@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "quantum_quandary",
+  "version": "${version}",
+  "name": "Quantum Quandary",
+  "description": "voximir's Quantum Quandary mod!",
+  "authors": [
+    "voximir"
+  ],
+  "contact": {
+    "homepage": "https://voximir.org/",
+    "sources": "https://github.com/voximir-p/quantum-quandary"
+  },
+  "license": "MIT",
+  "icon": "assets/quantum_quandary/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.voximir.quantum_quandary.QuantumQuandary"
+    ],
+    "fabric-datagen": [
+      "org.voximir.quantum_quandary.QuantumQuandaryDataGenerator"
+    ],
+    "client": [
+      "org.voximir.quantum_quandary.QuantumQuandaryClient"
+    ]
+  },
+  "mixins": [
+    "quantum_quandary.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
